@@ -4,7 +4,7 @@ def execute_command(command)
 end
 
 ["tagging", "talk"].each do |mailing_list|
-  [2018, 2019].each do |year|
+  [Time.now.year].each do |year|
     ["January", "February", "March", "April", "May", "June", "July", "August",
      "September", "October", "November", "December"].each_with_index do |month, month_index|
        if year == Time.now.year && (month_index + 1) > Time.now.month
