@@ -19,7 +19,7 @@ end
        filename = "#{mailing_list}-#{year}-#{month}.txt.gz"
        command = "curl #{base_url}/#{mailing_list}/#{year}-#{month}.txt.gz > #{filename}"
        execute_command(command)
-       execute_command("gunzip \"#{filename}\"")
+       execute_command("gunzip --force \"#{filename}\"")
      end
   end
 end
