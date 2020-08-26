@@ -8,12 +8,12 @@ end
     ["January", "February", "March", "April", "May", "June", "July", "August",
      "September", "October", "November", "December"].each_with_index do |month, month_index|
        if year == Time.now.year && (month_index + 1) > Time.now.month
-        puts "skipping #{year} #{month} as it is in future"
-        next
+         puts "skipping #{year} #{month} as it is in future"
+         next
        end
        if year > Time.now.year
-        puts "skipping #{year} #{month} as it is in future"
-        next
+         puts "skipping #{year} #{month} as it is in future"
+         next
        end
        base_url = "https://lists.openstreetmap.org/pipermail"
        filename = "#{mailing_list}-#{year}-#{month}.txt.gz"
