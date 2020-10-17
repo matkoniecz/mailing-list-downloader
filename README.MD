@@ -5,3 +5,6 @@ Even if someone has 0 programming experience, it is still easy to configure (let
 As Ruby script it requires Ruby to run. I see that it assumes that curl and gunzip commands exist on the system.
 
 (if you want it to run but anything is unclear, let me know using https://github.com/matkoniecz/mailing-list-downloader/issues (create a new issue if it is not covered by one of open issues) and I will document it or try to reduce number of dependencies)
+
+
+See also the same in pure bash at [https://wiki.openstreetmap.org/wiki/User:ZeLonewolf/Searching_mailing_lists](https://wiki.openstreetmap.org/wiki/User:ZeLonewolf/Searching_mailing_lists)
