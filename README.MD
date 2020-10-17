@@ -1,6 +1,6 @@
 Ruby script that will download tagging and talk for a given year, if one has some minimal programming experience it should be easy to change it to other mailing lists and/or other years.
 
-Even if someone has 0 programming experience, it is still easy to fix (let me know if such instructions would be useful).
+Even if someone has 0 programming experience, it is still easy to configure (let me know if such instructions would be useful).
 
 As Ruby script it requires Ruby to run. I see that it assumes that curl and gunzip commands exist on the system.
 
