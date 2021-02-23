@@ -8,3 +8,5 @@ As Ruby script it requires Ruby to run. I see that it assumes that curl and gunz
 
 
 See also the same in pure bash at [https://wiki.openstreetmap.org/wiki/User:ZeLonewolf/Searching_mailing_lists](https://wiki.openstreetmap.org/wiki/User:ZeLonewolf/Searching_mailing_lists)
+
+See also other mailing list scripts at [https://github.com/SomeoneElseOSM/listscripts](https://github.com/SomeoneElseOSM/listscripts)
