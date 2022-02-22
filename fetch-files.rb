@@ -3,8 +3,11 @@ def execute_command(command)
   `#{command}`
 end
 
-["tagging", "talk", "osmf-talk", "legal-talk", "talk-us"].each do |mailing_list|
-  [Time.now.year].each do |year|
+Dir.mkdir 'archives' unless File.directory?("archives")
+Dir.chdir("archives")
+
+["tagging", "talk", "osmf-talk", "legal-talk", "talk-us", "talk-gb", "talk-ca", "talk-pl"].each do |mailing_list|
+  (2004..Time.now.year).each do |year| # https://lists.openstreetmap.org/pipermail/talk/
     ["January", "February", "March", "April", "May", "June", "July", "August",
      "September", "October", "November", "December"].each_with_index do |month, month_index|
        if year == Time.now.year && (month_index + 1) > Time.now.month
