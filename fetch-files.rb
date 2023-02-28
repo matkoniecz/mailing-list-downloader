@@ -6,6 +6,13 @@ end
 Dir.mkdir 'archives' unless File.directory?("archives")
 Dir.chdir("archives")
 
+# TODO: better handle updating archives
+
+# TODO: better handle download+unpacking failing because archive is not available for that time as list has not yet existed
+#       right now it works but leaves garbage files and confusing output
+
+# rewrite in Python?
+
 ["tagging", "talk", "osmf-talk", "legal-talk", "talk-us", "talk-gb", "talk-ca", "talk-pl", "dev", "josm-dev"].each do |mailing_list|
   (2004..Time.now.year).each do |year| # https://lists.openstreetmap.org/pipermail/talk/
     ["January", "February", "March", "April", "May", "June", "July", "August",
