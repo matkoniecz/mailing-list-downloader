@@ -5,9 +5,9 @@ def execute_command(command):
   print(command)
   os.system(command)
 
-## TODO
-## Dir.mkdir 'archives' unless File.directory?("archives")
-## Dir.chdir("archives")
+if os.path.isdir("archives") == False:
+    os.mkdir('archives')
+os.chdir('archives')
 
 # TODO: better handle updating archives
 
